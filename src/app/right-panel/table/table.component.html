@@ -1,0 +1,31 @@
+<mat-table class="lessons-table mat-elevation-z8" [dataSource]="dataSource">
+  <!-- 
+  <ng-container *ngIf="row[col] == 'repo'" *ngFor="let col of displayedColumns" [matColumnDef]="col">
+    <mat-header-cell *matHeaderCellDef> {{col}} </mat-header-cell>
+    <mat-cell *matCellDef="let row">{{row[col]}}</mat-cell>
+  </ng-container> -->
+  <ng-container matColumnDef="repo">
+      <mat-header-cell *matHeaderCellDef>Reposatory</mat-header-cell>
+      <mat-cell *matCellDef="let lesson">{{lesson.repo}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="npm">
+      <mat-header-cell *matHeaderCellDef>NPM</mat-header-cell>
+      <mat-cell class="description-cell" *matCellDef="let lesson"><img [src]="lesson.npm" /></mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="status">
+      <mat-header-cell *matHeaderCellDef>Status</mat-header-cell>
+      <mat-cell class="duration-cell" *matCellDef="let lesson"><img [src]="lesson.status" /></mat-cell>
+  </ng-container>
+  
+  <ng-container matColumnDef="issues">
+    <mat-header-cell *matHeaderCellDef>Issues</mat-header-cell>
+    <mat-cell class="duration-cell" *matCellDef="let lesson"><img [src]="lesson.issues" /></mat-cell>
+</ng-container>
+  
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  
+  <mat-row *matRowDef="let row; columns: displayedColumns" class="rowdata" (click)="goToLink()"></mat-row>
+  
+</mat-table>

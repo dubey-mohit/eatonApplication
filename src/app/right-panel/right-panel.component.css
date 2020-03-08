@@ -1,0 +1,26 @@
+.header-panel {
+    height: 20%;
+    border: 1px solid grey;
+    background-color: green;
+}
+
+.right-panel {
+    overflow-y: auto;
+    position: fixed;
+    height: 90%;
+    background-color: #EAF6F1;
+}
+
+#title {
+    color: green;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#subtitle {
+    color: green;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
