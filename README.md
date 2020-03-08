@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
+# How to run the App 
+
+Step 1 - Clone the project from given link.
+
+Step 2 - Go to the path of the App.
+
+Step 2 - Use npm install to install all the dependencies.
+
+Step 3 - After installing dependencies just use ng serve to run the App.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
